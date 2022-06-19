@@ -1,0 +1,711 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Comprssr.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TBDBASE             BITMAP  DISCARDABLE     "res\\tbdbase.bmp"
+IDR_TBANALYSIS          BITMAP  DISCARDABLE     "res\\tbanal.bmp"
+IDR_TBCOMPRESSION       BITMAP  DISCARDABLE     "res\\tbcmprsn.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TBDBASE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_OPENDBASE
+    BUTTON      ID_DBASEINFO
+    SEPARATOR
+    BUTTON      ID_VIEWDB
+    BUTTON      ID_VIEWDOC
+    SEPARATOR
+    BUTTON      ID_EXECREQUEST
+END
+
+IDR_TBANALYSIS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_ANALYZE
+    BUTTON      ID_ANALYSERSETTINGS
+END
+
+IDR_TBCOMPRESSION TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_OPENOUTPUTDB
+    BUTTON      ID_OUTPUTDBINFO
+    BUTTON      ID_OUTPUTDBADJUSTMENT
+    SEPARATOR
+    BUTTON      ID_INITCOMPRESSOR
+    SEPARATOR
+    BUTTON      ID_COMPRESS
+    BUTTON      ID_DECOMPRESS
+    SEPARATOR
+    BUTTON      ID_SAVEPROCESSEDDATA
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_COMPRSTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "&Новый\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "&Открыть...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "Закрыть",                     ID_FILE_CLOSE
+        MENUITEM "&Сохранить\tCtrl+S",          ID_FILE_SAVE
+        MENUITEM "Сохранить &как...",           ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Печать...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Предварительный просмотр",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "Настройка &печати...",        ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Не&давно использовавшийся файл", ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "В&ыход",                      ID_APP_EXIT
+    END
+    POPUP "Правка"
+    BEGIN
+        MENUITEM "Отменить\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Вырезать\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "Скопировать\tCtrl+C",         ID_EDIT_COPY
+        MENUITEM "Вставить\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "&Вид"
+    BEGIN
+        MENUITEM "&Строка состояния",           ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Данные"
+    BEGIN
+        MENUITEM "Открыть",                     ID_OPENDBASE
+        MENUITEM "Информация...",               ID_DBASEINFO
+        MENUITEM SEPARATOR
+        MENUITEM "Источник",                    ID_VIEWDB
+        MENUITEM "Документ",                    ID_VIEWDOC
+        MENUITEM SEPARATOR
+        MENUITEM "Выполнить запрос",            ID_EXECREQUEST
+    END
+    POPUP "&Анализ данных"
+    BEGIN
+        MENUITEM "Анализ",                      ID_ANALYZE
+        MENUITEM "Настройка...",                ID_ANALYSERSETTINGS
+    END
+    POPUP "Окно"
+    BEGIN
+        MENUITEM "Новое",                       ID_WINDOW_NEW
+        MENUITEM "Каскадом",                    ID_WINDOW_CASCADE
+        MENUITEM "Разделить",                   ID_WINDOW_TILE_HORZ
+        MENUITEM "Упорядочить всё",             ID_WINDOW_ARRANGE
+    END
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "О &программе...",             ID_APP_ABOUT
+    END
+END
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "&Новый\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "&Открыть...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Настройка &печати...",        ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Не&давно использовавшийся файл", ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "В&ыход",                      ID_APP_EXIT
+    END
+    POPUP "&Вид"
+    BEGIN
+        MENUITEM "&Строка состояния",           ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Справка"
+    BEGIN
+        MENUITEM "О &программе...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DBINFO DIALOG DISCARDABLE  0, 0, 182, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Информация об источнике данных"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_TABLELIST,4,16,172,80,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Таблицы:",IDC_STATIC,4,4,120,8
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О программе"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,8,16,16,16
+    LTEXT           "Компрессор версия 1.0",IDC_STATIC,40,10,132,8,
+                    SS_NOPREFIX
+    LTEXT           "Авторское право © А.С. Новиков, 2001",IDC_STATIC,40,25,
+                    132,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ANALYSERSETTINGS DIALOG DISCARDABLE  0, 0, 210, 40
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Настройка параметров анализатора"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,4,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,156,20,50,14
+    LTEXT           "Критерий информативности:",IDC_STATIC,4,8,104,12
+    EDITTEXT        IDC_INFFACTOR,108,8,40,12,ES_AUTOHSCROLL
+END
+
+IDD_DBADJUSTMENT DIALOG DISCARDABLE  0, 0, 187, 44
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Настройка"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,130,24,50,14
+    LTEXT           "Имя таблицы:",IDC_STATIC,8,8,48,8
+    EDITTEXT        IDC_TABLENAME,8,20,108,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DBINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ANALYSERSETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 33
+    END
+
+    IDD_DBADJUSTMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 37
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Компрессор\0"
+            VALUE "CompanyName", " \0"
+            VALUE "FileDescription", "Программа Компрессор\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "Compressor\0"
+            VALUE "LegalCopyright", "Авторское право © А.С. Новиков, 2001\0"
+            VALUE "LegalTrademarks", " \0"
+            VALUE "OriginalFilename", "Comprssr.exe\0"
+            VALUE "PrivateBuild", " \0"
+            VALUE "ProductName", "Программа Компрессор\0"
+            VALUE "ProductVersion", "1.0\0"
+            VALUE "SpecialBuild", " \0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "ЗАМ"
+    ID_INDICATOR_REC        "ЗАП"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Создать новый документ\nНовый"
+    ID_FILE_OPEN            "Открыть существующий документ\nОткрыть"
+    ID_FILE_CLOSE           "Закрыть активный документ\nЗакрыть"
+    ID_FILE_SAVE            "Сохранить активный документ\nСохранить"
+    ID_FILE_SAVE_AS         "Сохранить активный документ с новым именем\nСохранить как"
+    ID_FILE_PRINT           "Печать документа\nПечать"
+    ID_FILE_PRINT_PREVIEW   "Предварительный просмотр\nПросмотр"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Показать информацию о программе, версии и об авторском праве\nО программе"
+    ID_APP_EXIT             "Выйти из программы\nВыйти"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Открыть этот документ"
+    ID_FILE_MRU_FILE2       "Открыть этот документ"
+    ID_FILE_MRU_FILE3       "Открыть этот документ"
+    ID_FILE_MRU_FILE4       "Открыть этот документ"
+    ID_FILE_MRU_FILE5       "Открыть этот документ"
+    ID_FILE_MRU_FILE6       "Открыть этот документ"
+    ID_FILE_MRU_FILE7       "Открыть этот документ"
+    ID_FILE_MRU_FILE8       "Открыть этот документ"
+    ID_FILE_MRU_FILE9       "Открыть этот документ"
+    ID_FILE_MRU_FILE10      "Открыть этот документ"
+    ID_FILE_MRU_FILE11      "Открыть этот документ"
+    ID_FILE_MRU_FILE12      "Открыть этот документ"
+    ID_FILE_MRU_FILE13      "Открыть этот документ"
+    ID_FILE_MRU_FILE14      "Открыть этот документ"
+    ID_FILE_MRU_FILE15      "Открыть этот документ"
+    ID_FILE_MRU_FILE16      "Открыть этот документ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Переключиться на следующее окно\nСледующее окно"
+    ID_PREV_PANE            "Переключиться на предыдущее окно\nПредыдущее окно"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Создать новое окно\nНовое"
+    ID_WINDOW_SPLIT         "Расщепить активное окно на секции\nРасщепить"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Очистить выделение\nОчистить"
+    ID_EDIT_CLEAR_ALL       "Очистить всё\nОчистить всё"
+    ID_EDIT_COPY            "Скопировать выделение и поместить в буфер обмена\nСкопировать"
+    ID_EDIT_CUT             "Вырезать выделение и поместить в буфер обмена\nВырезать"
+    ID_EDIT_FIND            "Найти текст\nНайти"
+    ID_EDIT_PASTE           "Вставить содержимое буфера обмена\nВставить"
+    ID_EDIT_REPEAT          "Повторить последнее действие\nПовторить"
+    ID_EDIT_REPLACE         "Заменить текст другим\nЗаменить"
+    ID_EDIT_SELECT_ALL      "Выделить весь документ\nВыделить всё"
+    ID_EDIT_UNDO            "Отменить последнее действие\nОтменить"
+    ID_EDIT_REDO            "Повторить отмененное действие\nПовторить"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Показать или спрятать панель инструментов\nПереключить панель инструментов"
+    ID_VIEW_STATUS_BAR      "Показать или спрятать строку состояния\nПереключить строку состояния"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Изменить размер окна"
+    AFX_IDS_SCMOVE          "Изменить положение окна"
+    AFX_IDS_SCMINIMIZE      "Свернуть окно"
+    AFX_IDS_SCMAXIMIZE      "Увеличить окно до полного размера"
+    AFX_IDS_SCNEXTWINDOW    "Переключиться на следующее окно документа"
+    AFX_IDS_SCPREVWINDOW    "Переключиться на предыдущее окно документа"
+    AFX_IDS_SCCLOSE         "Закрыть активное окно"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Восстановить окно до нормального размера"
+    AFX_IDS_SCTASKLIST      "Показать список задач"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PAGE_DATA           "Данные"
+    IDS_PAGE_ANALYSIS       "Анализ данных"
+    IDS_PAGE_COMPRESSION    "Сжатие/Восстановление данных"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPENDBASE            "Открыть базу данных\nОткрыть"
+    ID_EXECREQUEST          "Выполнить запрос\nВыполнить"
+    ID_DBASEINFO            "Информация об источнике данных\nИнформация"
+    ID_VIEWDB               "Показывать результат запроса\nИсточник"
+    ID_VIEWDOC              "Показывать отобранные данные\nДокумент"
+    ID_ANALYZE              "Проанализировать данные\nАнализ"
+    ID_ANALYSERSETTINGS     "Настройка параметров анализатора\nНастройка"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_ERROR           "Ошибка!"
+    IDS_MSG_ERROR_DBOPENFAIL "Источник данных не открыт."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GRAPH_TITLE         "Число ненулевых собственных чисел ковариационной матрицы"
+    IDS_GRAPH_XAXIS         "Число элементов входного множества"
+    IDS_GRAPH_YAXIS         "Внутренняя размерность"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Компрессор"
+    IDR_COMPRSTYPE          "\nCmprs\nCmprs\nФайлы компрессора (*.crw)\n.crw\nCompressor.Document\nCompressor Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Компрессор"
+    AFX_IDS_IDLEMESSAGE     "Готово"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Comprssr.ico"
+IDR_COMPRSTYPE          ICON    DISCARDABLE     "res\\CprsDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Compressor"
+    IDR_COMPRSTYPE          "\nCmprs\nCmprs\nCompressor Files (*.crw)\n.crw\nCompressor.Document\nCompressor Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Compressor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Comprssr.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxdb.rc"          // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
