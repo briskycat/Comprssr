@@ -1,0 +1,14 @@
+[ODBC]
+DRIVER=Microsoft Text Driver (*.txt; *.csv)
+UID=admin
+UserCommitSync=Yes
+Threads=3
+SafeTransactions=0
+PageTimeout=5
+MaxScanRows=25
+MaxBufferSize=2048
+FIL=text
+Extensions=csv
+DriverId=27
+DefaultDir=E:\USERS\ANDY\INSTITUT.E\DIPLOMA\FOILS
+DBQ=E:\USERS\ANDY\INSTITUT.E\DIPLOMA\FOILS
